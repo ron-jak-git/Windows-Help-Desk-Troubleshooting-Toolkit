@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a practical Windows troubleshooting and system administration toolkit developed in a Windows 10 Pro ARM64 virtual machine running in UTM.
+This project is a practical Windows troubleshooting and system administration toolkit developed in a Windows 11 Pro ARM64 virtual machine running in UTM.
 
 The project is designed to demonstrate foundational IT support skills through hands-on exercises, PowerShell commands, troubleshooting procedures, and technical documentation.
 
@@ -24,7 +24,7 @@ The project is designed to demonstrate foundational IT support skills through ha
 | Host Operating System | macOS |
 | Host Hardware | Apple Silicon MacBook Air |
 | Virtualization Platform | UTM |
-| Guest Operating System | Windows 10 Pro ARM64 |
+| Guest Operating System | Windows 11 Pro ARM64 |
 | Shell | PowerShell |
 | Documentation | Markdown |
 
