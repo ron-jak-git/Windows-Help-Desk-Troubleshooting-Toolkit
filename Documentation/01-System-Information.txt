@@ -1,0 +1,64 @@
+# Exercise 1: Windows System Information
+
+## Objective
+
+The objective of this exercise was to use PowerShell to collect basic information about a Windows computer. This is a useful first step when identifying a computer during an IT support or troubleshooting task.
+
+## Lab Environment
+
+- Virtualization software: UTM
+- Guest operating system: Windows 10 Pro
+- System architecture: ARM64
+- Command-line tool: Windows PowerShell
+
+## PowerShell Command
+
+```powershell
+Get-ComputerInfo |
+    Select-Object CsName, WindowsProductName, WindowsVersion, OsArchitecture
+```
+
+## Command Explanation
+
+- `Get-ComputerInfo` retrieves system and operating system information.
+- The pipe operator (`|`) passes the command output to another command.
+- `Select-Object` displays only the properties specified.
+- `CsName` identifies the computer name.
+- `WindowsProductName` identifies the installed Windows edition.
+- `WindowsVersion` displays the Windows version label.
+- `OsArchitecture` identifies the operating system architecture.
+
+## Results
+
+The command returned the following information:
+
+| Property | Result |
+|---|---|
+| Computer Name | WIN-HF1QU0PJJJF |
+| Windows Product | Windows 10 Pro |
+| Windows Version | 2009 |
+| OS Architecture | ARM 64-bit Processor |
+
+## Findings
+
+The virtual machine is running Windows 10 Pro on ARM64 architecture.
+
+The Windows version value `2009` corresponds to Windows 10 version 20H2. This is a version label, not the operating system build number.
+
+The computer name is `WIN-HF1QU0PJJJF`.
+
+## What I Learned
+
+- How to use `Get-ComputerInfo` to retrieve Windows system information.
+- How to use `Select-Object` to filter command output.
+- How the PowerShell pipe operator passes information between commands.
+- How to identify a computer's operating system edition and architecture.
+
+## Next Steps
+
+In a future exercise, I will investigate network configuration and connectivity using PowerShell commands.
+
+---
+
+*Project: Windows Help Desk Troubleshooting Toolkit*  
+*Exercise: 01 — System Information*
