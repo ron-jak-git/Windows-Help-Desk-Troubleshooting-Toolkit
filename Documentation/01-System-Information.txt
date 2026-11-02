@@ -7,7 +7,7 @@ The objective of this exercise was to use PowerShell to collect basic informatio
 ## Lab Environment
 
 - Virtualization software: UTM
-- Guest operating system: Windows 10 Pro
+- Guest operating system: Windows 11 Pro
 - System architecture: ARM64
 - Command-line tool: Windows PowerShell
 
@@ -35,7 +35,7 @@ The command returned the following information:
 | Property | Result |
 |---|---|
 | Computer Name | WIN-HF1QU0PJJJF |
-| Windows Product | Windows 10 Pro |
+| Windows Product | Windows 11 Pro |
 | Windows Version | 2009 |
 | OS Architecture | ARM 64-bit Processor |
 
