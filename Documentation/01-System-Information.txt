@@ -35,11 +35,21 @@ The command returned the following information:
 | Property | Result |
 |---|---|
 | Computer Name | WIN-HF1QU0PJJJF |
-| Windows Product | Windows 11 Pro |
-| Windows Version | 2009 |
+| Windows Product (PowerShell) | Windows 10 Pro (reported by Get-ComputerInfo) |
+| Windows Version (PowerShell) | 2009 |
+| OS Build (PowerShell) | 26300 |
+| Windows Edition (winver) | Windows 11 Pro |
+| Windows Version (winver) | 26H2 |
+| Windows Build (winver) | 26300.9457 |
 | OS Architecture | ARM 64-bit Processor |
 
 ## Findings
+
+The Get-ComputerInfo command returned Windows 10 Pro and version 2009,
+while the About Windows (winver) dialog confirmed Windows 11 Pro,
+version 26H2, build 26300.9457. The two sources returned inconsistent
+version information, so the winver result was used to identify the
+installed Windows edition and version.
 
 The virtual machine is running Windows 10 Pro on ARM64 architecture.
 
